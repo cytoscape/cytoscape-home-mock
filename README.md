@@ -1,3 +1,20 @@
+# Cytoscape Home Design Mock
+
+This is just a design idea for the Cytoscape Home project.
+
+Using Material UI components.
+
+To start, type
+
+```
+yarn install
+yarn start
+```
+
+from commandline.
+
+----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
