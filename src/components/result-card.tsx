@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       maxWidth: 550,
+      minWidth: 350,
       height: 550
     },
     logo: {
@@ -60,7 +61,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function ResultCard() {
+const ResultCard = (props: any) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -124,3 +125,5 @@ export default function ResultCard() {
     </Card>
   );
 }
+
+export default ResultCard
