@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import ResultCard from "./result-card";
 import GmCard from "./gm-card";
@@ -24,9 +23,6 @@ export default function ResultGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={2}>
-        <Grid item xs={4}>
-          <GmCard />
-        </Grid>
         {createCards().map(card => (
           <Grid item xs={4}>
             {card}
@@ -39,9 +35,13 @@ export default function ResultGrid() {
 
 const createCards = () => {
   const cards = [];
-  let len = 20;
+  let len = 6;
   while (len--) {
-    cards.push(<ResultCard />);
+    if(len%2) {
+      cards.push(<ResultCard />);
+    } else {
+      cards.push(<GmCard />);
+    }
   }
 
   return cards;

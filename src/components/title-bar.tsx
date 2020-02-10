@@ -2,13 +2,10 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { createStyles, fade, Theme, makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
-import SvgIcon, { SvgIconProps } from '@material-ui/core/SvgIcon';
 import cylogo from '../images/cytoscape-logo.svg'
 import humanIcon from '../images/human.svg'
 
@@ -22,8 +19,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
     },
     logo: {
-      width: theme.spacing(6),
-      height: '100%',
+      width: theme.spacing(5),
+      height: '40%',
 
     },
     title: {
@@ -49,7 +46,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     searchIcon: {
       width: theme.spacing(7),
-      height: '100%',
+      height: '80%',
       position: 'absolute',
       pointerEvents: 'none',
       display: 'flex',
